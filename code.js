@@ -22,8 +22,6 @@ var json = [{ "dia": "MO", "hora_inicio": "00:01", "hora_fin": "09:00", "monto":
 { "dia": "SA", "hora_inicio": "18:01", "hora_fin": "00:00", "monto": 25 },
 { "dia": "SU", "hora_inicio": "18:01", "hora_fin": "00:00", "monto": 25 }];
 
-var input = "RENE=MO10:00-12:00,TU10:00-12:00,TH01:00-03:00,SA14:00-18:00,SU20:00-21:00";
-//var input="ASTRID=MO10:00-12:00,TH12:00-14:00,SU20:00-21:00";
 
 function calculatePayment(input) {
 
