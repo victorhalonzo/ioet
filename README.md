@@ -13,4 +13,4 @@ Design the solution.
 Implement the design.
 Test the program.
 
-To run program is necessary to copy the index file and the code.js file in a same folder of the pc. Then open the index file in a web browser. Finally load a txt file with the inputs (you can use the same file there is in the link).
+To run program is necessary to download the folder "coding exercise ioet" in the pc. Then open the index file in a web browser. Finally load a txt file with the inputs (you can use the same file there is in the link).
