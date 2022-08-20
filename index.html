@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Coding Exercise</title>
+</head>
+
+<body>
+    <input type="file" name="inputFile" id="inputFile">
+    <br>
+    <pre id="output"></pre>
+    <script src="code.js"></script>
+
+
+    <script type="text/javascript">
+
+        var input = document.getElementById("inputFile");
+        var reader = new FileReader;
+
+        input.addEventListener('change', onChange);
+
+
+        function onChange(event) {
+            var file = event.target.files[0];
+
+            reader.readAsText(file);
+
+            reader.onload = onLoad;
+
+        }
+
+        function onLoad() {
+            var result = reader.result; 
+            var lineas = result.split('\n');
+
+            for (var linea of lineas) {
+                
+                var op = document.createElement("h1");
+
+                op.innerHTML = calculatePayment(linea);
+                document.body.appendChild(op);
+                
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
